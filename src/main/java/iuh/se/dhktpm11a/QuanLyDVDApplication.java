@@ -48,6 +48,9 @@ public class QuanLyDVDApplication extends Application {
      * window.
      */
     protected void displayInitialScene() {
+
+        // Thay thế View.SAMPLE bằng View đầu tiên xuất hiện khi chương trình khỏi động.
+        // Nhớ khai báo đầy đủ trong resource/views và helper/View
 //        stageManager.switchScene(View.SAMPLE);
 
 
