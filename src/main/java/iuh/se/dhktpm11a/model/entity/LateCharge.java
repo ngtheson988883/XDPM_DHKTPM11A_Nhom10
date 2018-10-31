@@ -42,4 +42,13 @@ public class LateCharge {
     public void setRentDetail(RentDetail rentDetail) {
         this.rentDetail = rentDetail;
     }
+
+    @Override
+    public String toString() {
+        return "LateCharge{" +
+                "rentDetailId='" + rentDetailId + '\'' +
+                ", lateChargePrice=" + lateChargePrice +
+                ", rentDetail=" + rentDetail +
+                '}';
+    }
 }

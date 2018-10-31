@@ -25,9 +25,9 @@ public class Disk {
     @org.hibernate.annotations.Type(type="org.hibernate.type.StringNVarcharType")
     private String status;
 
-    public Disk(String rentDetailId, Title titleId, String status) {
+    public Disk(String rentDetailId, Title title, String status) {
         this.rentDetailId = rentDetailId;
-        this.title = titleId;
+        this.title = title;
         this.status = status;
     }
 
@@ -37,6 +37,7 @@ public class Disk {
     }
 
     public Disk() {
+
     }
 
     public String getDiskId() {
@@ -59,8 +60,8 @@ public class Disk {
         return title;
     }
 
-    public void setTitle(Title titleId) {
-        this.title = titleId;
+    public void setTitle(Title title) {
+        this.title = title;
     }
 
     public String getStatus() {
@@ -76,7 +77,7 @@ public class Disk {
         return "Disk{" +
                 "diskId='" + diskId + '\'' +
                 ", rentDetailId='" + rentDetailId + '\'' +
-                ", titleId=" + title +
+                ", title=" + title +
                 ", status='" + status + '\'' +
                 '}';
     }

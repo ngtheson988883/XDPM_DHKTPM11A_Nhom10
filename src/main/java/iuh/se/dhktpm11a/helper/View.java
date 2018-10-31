@@ -13,6 +13,17 @@ public enum View {
         public String getFxmlFile() {
             return "/views/";
         }
+    },
+    SAMPLE{
+        @Override
+        public String getTitle() {
+            return "/views/Sample.fxml";
+        }
+
+        @Override
+        public String getFxmlFile() {
+            return "/views/Sample.fxml";
+        }
     };
     public abstract String getTitle();
     public abstract String getFxmlFile();

@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 
 import javax.persistence.*;
+import java.util.Objects;
 
 
 @Entity
@@ -56,6 +57,19 @@ public class Title {
 
     public void setTitleName(String titleName) {
         this.titleName = titleName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Title title = (Title) o;
+        return Objects.equals(titleId, title.titleId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(titleId);
     }
 
     @Override

@@ -5,6 +5,7 @@ import iuh.se.dhktpm11a.helper.View;
 import iuh.se.dhktpm11a.model.entity.Disk;
 import iuh.se.dhktpm11a.model.entity.Title;
 import iuh.se.dhktpm11a.model.respository.DiskRespository;
+import iuh.se.dhktpm11a.model.respository.LateChargeRespository;
 import iuh.se.dhktpm11a.model.respository.TitleRespository;
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -18,6 +19,8 @@ public class QuanLyDVDApplication extends Application {
 
     protected ConfigurableApplicationContext springContext;
     protected StageManager stageManager;
+
+
 
 
 
@@ -51,8 +54,7 @@ public class QuanLyDVDApplication extends Application {
 
         // Thay thế View.SAMPLE bằng View đầu tiên xuất hiện khi chương trình khỏi động.
         // Nhớ khai báo đầy đủ trong resource/views và helper/View
-//        stageManager.switchScene(View.SAMPLE);
-
+        stageManager.switchScene(View.SAMPLE);
 
     }
 

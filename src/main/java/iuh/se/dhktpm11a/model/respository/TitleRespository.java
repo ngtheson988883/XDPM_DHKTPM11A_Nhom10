@@ -6,4 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface TitleRespository extends JpaRepository<Title, String> {
     @Override
     <S extends Title> S save(S entity);
+
 }
